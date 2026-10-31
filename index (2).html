@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sp1derNOT | Official Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: #0b0e14;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(18, 24, 38, 0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 255, 102, 0.1);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #00ff66;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+        }
+        .nav-links a {
+            color: #a0aec0;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #00ff66;
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 100px 20px 60px 20px;
+            background: radial-gradient(circle at center, rgba(0, 255, 102, 0.05) 0%, rgba(11, 14, 20, 1) 70%);
+        }
+        .hero-content {
+            max-width: 800px;
+            z-index: 10;
+        }
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, #ffffff 0%, #a0aec0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero h1 span {
+            color: #00ff66;
+            -webkit-text-fill-color: initial;
+            text-shadow: 0 0 20px rgba(0, 255, 102, 0.4);
+        }
+        .hero p {
+            font-size: 20px;
+            color: #a0aec0;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .cta-btn {
+            display: inline-block;
+            background: #00ff66;
+            color: #0b0e14;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 20px rgba(0, 255, 102, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(0, 255, 102, 0.6);
+        }
+        .features {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #121826;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 255, 102, 0.3);
+        }
+        .card-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        .card p {
+            color: #a0aec0;
+            line-height: 1.6;
+        }
+        footer {
+            background: #070a0f;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: #4a5568;
+            font-size: 14px;
+        }
+        footer a {
+            color: #00ff66;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">sp1derNOT</div>
+            <nav class="nav-links">
+                <a href="#home">Главная</a>
+                <a href="#features">Проекты</a>
+                <a href="#about">О нас</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Добро пожаловать на <span>sp1derNOT.com</span></h1>
+            <p>Ультимативная игровая и технологическая экосистема. Здесь создаются крутые цифровые проекты, настраивается топовый софт и собирается мощное комьюнити.</p>
+            <a href="#features" class="cta-btn">Узнать больше</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Gaming & Customization</h3>
+            <p>Кастомизация игровых интерфейсов, уникальные визуальные решения, оптимизация пинга и софта для максимальной производительности в соревновательных играх.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🌐</div>
+            <h3>Web Platforms</h3>
+            <p>Разработка стильных, быстрых статических сайтов и игровых лендингов с высокой скоростью загрузки и полной защитой данных.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🛡️</div>
+            <h3>Digital Security</h3>
+            <p>Полезные утилиты для проверки безопасности вашей системы, оптимизации трафика и защиты игровых аккаунтов от сторонних угроз.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 sp1derNOT.com. Все права защищены. Разработано для вечного и бесплатного хостинга.</p>
+    </footer>
+
+</body>
+</html>
